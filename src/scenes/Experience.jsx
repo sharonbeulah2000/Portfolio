@@ -3,7 +3,7 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
 const Experience = () => {
-  const [selectCompany, setSelectCompany] = useState("lid-vis");
+  const [selectCompany, setSelectCompany] = useState("lid-viz");
   const selectedStyles =
     "bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500";
   
@@ -41,7 +41,7 @@ const Experience = () => {
             <div
               id="lid-vis"
               className={`rounded-sm rounded-l-none md:border-none  border-l border-blue cursor-pointer py-3 px-5 md:px-7 font-semibold whitespace-nowrap ${
-                selectCompany == "lid-vis" ? selectedStyles : ""
+                selectCompany == "lid-viz" ? selectedStyles : ""
               }`}
               onClick={(e) => {
                 setSelectCompany(e.target.id);
@@ -84,9 +84,9 @@ const Experience = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          {selectCompany == "lid-vis" && (
+          {selectCompany == "lid-viz" && (
             <motion.div
-              className="experience-details-Lid-Vision text-justify"
+              className="experience-details-Lid-Vizion text-justify"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -104,7 +104,7 @@ const Experience = () => {
                       href="https://www.lidvizion.com/about-us/"
                       target="blank"
                     >
-                      @Lid Vision
+                      @Lid Vizion
                     </a>
                   </span>
                 </h1>
